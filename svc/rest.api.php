@@ -1,5 +1,6 @@
 <?php
 
+//Note: This file was provided to work with. Citation goes to Herb Vanselow of the CNT department of NAIT
 
 // Wikipedia :
 // Representational State Transfer (REST)
