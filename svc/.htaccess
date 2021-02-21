@@ -1,0 +1,14 @@
+# Enable rewriting on for this dir
+RewriteEngine On
+# Rewrite condition - must not be an actual physical filename
+RewriteCond %{REQUEST_FILENAME} !-f
+# Rewrite condition - must not be an actual physical directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# flag [QSA] - if there is a query string, append it to completed Rewrite
+# flag [NC] - not case sensitive matching
+# flag [L] - if previous rules applied, stop additional evaluation
+# RewriteRule pattern substitution flags
+# match "fake" url after service dir ie. /~demo/cmpe2500/ica05_rest_2021jan/svc/(rest_method/filter)
+# substitute with api.php?request=rest_method/filter
+# Essentially all paths into the svc directory call api.php attaching rest of path as request
+RewriteRule ^(.*)$ api.php?request=$1 [QSA,NC,L]
