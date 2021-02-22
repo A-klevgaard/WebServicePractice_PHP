@@ -1,8 +1,7 @@
 <?php 
 //Name: Austin Klevgaard - ICA06 - Submissions Code : 1201_2500_A06 
 //database info:
-//username: aklevgaa_aklevgaa
-//pass: TastyTomato95
+
 
 //also:
 //username: aklevgaa_testuser
@@ -26,7 +25,7 @@ function mysqliConnect()
 
     //set up the $mysqli object to interact with the database
     //$mysqli = new mysqli(DB_Host, DB_user, DB_Password, DB, Name, [DB_Port], [BP_Unix_Socket])
-    $mysqli = new mysqli("localhost", "aklevgaa_aklevgaa", "TastyTomato95", "aklevgaa_icaDB" );
+    $mysqli = new mysqli("localhost", "redacted", "redacted", "aklevgaa_icaDB" );
 
     if ($mysqli->connect_errno)
     {
