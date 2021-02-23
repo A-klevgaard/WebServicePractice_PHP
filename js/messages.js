@@ -2,7 +2,6 @@
 //Submission Code : 1201_2500_A06
 
 var baseRESTurl = "./svc/messages/";
-//var hardCodeURL = "https://thor.net.nait.ca/~aklevgaa/Web_Development/CMPE2500_DuckTurtleSpider/icas/ICA06/svc/messages"
 
 $(function () {
     $('#filterMessageButton').on('click',GetMessages);
